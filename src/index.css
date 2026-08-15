@@ -120,7 +120,13 @@ body {
   color: #52606d;
 }
 
-.logout-button {
+.header-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.logout-button,
+.primary-button {
   padding: 10px 16px;
   border: 1px solid #cbd2d9;
   border-radius: 6px;
@@ -131,6 +137,16 @@ body {
 
 .logout-button:hover {
   background-color: #f0f2f4;
+}
+
+.primary-button {
+  border-color: #2f6feb;
+  background-color: #2f6feb;
+  color: #ffffff;
+}
+
+.primary-button:hover {
+  background-color: #2559c7;
 }
 
 .property-grid {
@@ -158,7 +174,98 @@ body {
 }
 
 .property-area {
+  margin: 0 0 6px;
+  color: #52606d;
+  font-size: 0.9rem;
+}
+
+.property-layout {
   margin: 0;
   color: #52606d;
   font-size: 0.9rem;
+}
+
+.property-card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.property-card-actions button {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #cbd2d9;
+  border-radius: 6px;
+  background-color: #ffffff;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.property-card-actions .danger-button {
+  border-color: #d64545;
+  color: #d64545;
+}
+
+.property-card-actions .danger-button:hover {
+  background-color: #fdeeee;
+}
+
+/* 物件の新規登録・編集フォーム */
+.property-form {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.property-form h2 {
+  margin: 0 0 16px;
+  font-size: 1.1rem;
+}
+
+.property-form label {
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  color: #52606d;
+}
+
+.property-form input {
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  border: 1px solid #cbd2d9;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.property-form-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.property-form-actions button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.property-form-actions button[type='submit'] {
+  background-color: #2f6feb;
+  color: #ffffff;
+}
+
+.property-form-actions button[type='submit']:disabled {
+  background-color: #9aa5b1;
+  cursor: not-allowed;
+}
+
+.property-form-actions button[type='button'] {
+  background-color: #ffffff;
+  border: 1px solid #cbd2d9;
 }
